@@ -1,0 +1,33 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all;
+}
+
+.player__name {
+    font-size: 2.4rem;
+}
+
+.player__stats {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #aaa;
+    font-weight: 300;
+}
+
+.player__actions {
+    flex-shrink: 0;
+}
+
+.player--position-1 {
+    border: 2px solid green;
+}
+
+.player--position-2 {
+    border: 2px solid blue;
+}
+
+.player--position-3 {
+    border: 2px solid red;
+}

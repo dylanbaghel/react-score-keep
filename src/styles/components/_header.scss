@@ -1,0 +1,16 @@
+.header {
+    background: $header-color;
+    color: white;
+    padding: 1.3rem;
+}
+
+.header__title {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.header_credit {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: italic;
+}

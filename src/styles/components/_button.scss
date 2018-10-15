@@ -1,0 +1,21 @@
+.button {
+    color: #000;
+    outline: none;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #aaa;
+    transition: background .2s ease, transform .1s ease;
+
+    &:hover, &:focus {
+        background: #ccc;
+        transform: scale(1.1)
+    }
+}
+
+.button-round {
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 1.6rem;
+}

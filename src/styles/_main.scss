@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8d8d8;
+}
+
+
+@import './settings';
+@import './wrapper';
+@import './components/header';
+@import './components/card';
+@import './components/player-list';
+@import './components/addplayer';
+@import './components/player';
+@import './components/button';
