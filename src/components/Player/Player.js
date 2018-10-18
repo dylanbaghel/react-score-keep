@@ -17,13 +17,16 @@ class Player extends React.Component {
                         <p className="player__stats">{player.position} place {player.score} point(s).</p>
                     </div>
                     <div className="player__actions">
-                        <button className="button button-round" onClick={() => {
+                        <button className="button button-round" onClick={(e) => {
+                            e.stopPropagation();
                             this.props.incScore(player._id);
                         }}>+</button>
-                        <button className="button button-round" onClick={() => {
+                        <button className="button button-round" onClick={(e) => {
+                            e.stopPropagation();
                             this.props.decScore(player._id);
                         }}>-</button>
-                        <button className="button button-round" onClick={() => {
+                        <button className="button button-round" onClick={(e) => {
+                            e.stopPropagation();
                             this.props.removePlayer(player._id);
                         }}>X</button>
                     </div>
