@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-score-keep/static/css/main.8ee6ba75.chunk.css",
-  "main.js": "/react-score-keep/static/js/main.21b9e252.chunk.js",
-  "main.js.map": "/react-score-keep/static/js/main.21b9e252.chunk.js.map",
-  "static/js/1.d78b1fec.chunk.js": "/react-score-keep/static/js/1.d78b1fec.chunk.js",
-  "static/js/1.d78b1fec.chunk.js.map": "/react-score-keep/static/js/1.d78b1fec.chunk.js.map",
+  "main.css": "/react-score-keep/static/css/main.f2bd26a2.chunk.css",
+  "main.js": "/react-score-keep/static/js/main.22f18302.chunk.js",
+  "main.js.map": "/react-score-keep/static/js/main.22f18302.chunk.js.map",
+  "static/js/1.fba41a8e.chunk.js": "/react-score-keep/static/js/1.fba41a8e.chunk.js",
+  "static/js/1.fba41a8e.chunk.js.map": "/react-score-keep/static/js/1.fba41a8e.chunk.js.map",
   "runtime~main.js": "/react-score-keep/static/js/runtime~main.241a54c0.js",
   "runtime~main.js.map": "/react-score-keep/static/js/runtime~main.241a54c0.js.map",
-  "static/css/main.8ee6ba75.chunk.css.map": "/react-score-keep/static/css/main.8ee6ba75.chunk.css.map",
+  "static/css/main.f2bd26a2.chunk.css.map": "/react-score-keep/static/css/main.f2bd26a2.chunk.css.map",
   "index.html": "/react-score-keep/index.html",
-  "precache-manifest.69771a65936ffabffb3e244d6dcadfa0.js": "/react-score-keep/precache-manifest.69771a65936ffabffb3e244d6dcadfa0.js",
+  "precache-manifest.6c0a8337b7fd3786497fe326057e1114.js": "/react-score-keep/precache-manifest.6c0a8337b7fd3786497fe326057e1114.js",
   "service-worker.js": "/react-score-keep/service-worker.js"
 }
