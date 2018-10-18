@@ -8,7 +8,9 @@ class Player extends React.Component {
         const { player } = this.props;
         const playerRankClassName = `player--position-${player.rank}`;
         return (
-            <div className={`card ${playerRankClassName}`}>
+            <div className={`card ${playerRankClassName} ${player.dim}`} onClick={() => {
+                this.props.findPlayer(player._id);
+            }}>
                 <div className="player">
                     <div>
                         <h2 className="player__name">{capitalize(player.name)}</h2>

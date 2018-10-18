@@ -13,8 +13,11 @@ class App extends Component {
     this.incScore = this.incScore.bind(this);
     this.decScore = this.decScore.bind(this);
     this.removePlayer = this.removePlayer.bind(this);
+    this.findPlayer = this.findPlayer.bind(this);
+    this.updatePlayer = this.updatePlayer.bind(this);
     this.state = {
-      players: []
+      players: [],
+      player: undefined
     };
   }
 
@@ -59,6 +62,28 @@ class App extends Component {
     }));
   }
 
+  updatePlayer(_id, playerName) {
+    this.setState((prevState) => ({
+      players: prevState.players.map((player) => {
+        if (player._id !== _id) {
+          return player;
+        };
+
+        return {
+          ...player,
+          name: playerName
+        };
+      }),
+      player: undefined
+    }));
+  }
+
+  findPlayer(_id) {
+    this.setState((prevState) => ({
+      player: prevState.players.find((player) => player._id === _id)
+    }));
+  }
+
 
   render() {
     let players = getPositionedPlayers(getSortedPlayers(this.state.players));
@@ -66,8 +91,19 @@ class App extends Component {
       <div>
         <Header />
         <div className="wrapper">
-          <PlayerList players={players} incScore={this.incScore} decScore={this.decScore} removePlayer={this.removePlayer} />
-          <AddPlayer addPlayer={this.addPlayer} />
+          <PlayerList
+            findPlayer={this.findPlayer}
+            players={players}
+            incScore={this.incScore}
+            decScore={this.decScore}
+            removePlayer={this.removePlayer}
+            player={this.state.player}
+          />
+          <AddPlayer
+            updatePlayer={this.updatePlayer}
+            addPlayer={this.addPlayer}
+            player={this.state.player}
+          />
         </div>
       </div>
     );

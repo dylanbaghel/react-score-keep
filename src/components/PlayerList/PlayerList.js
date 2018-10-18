@@ -13,7 +13,20 @@ const PlayerList = (props) => {
                     <FlipMove maintainContainerHeight={true}>
                         {
                             players.map((player) => {
-                                return <Player key={player._id} player={player} incScore={props.incScore} decScore={props.decScore} removePlayer={props.removePlayer} />
+                                if (props.player) {
+                                    if (props.player._id !== player._id) {
+                                        player.dim = "dim";
+                                    }
+                                }
+                                return <Player
+                                    key={player._id}
+                                    player={player}
+                                    incScore={props.incScore}
+                                    decScore={props.decScore}
+                                    removePlayer={props.removePlayer}
+                                    findPlayer={props.findPlayer}
+                                    editingPlayer={props.player}
+                                />
                             })
                         }
                     </FlipMove>

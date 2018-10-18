@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     word-break: break-all;
+    cursor: pointer;
 }
 
 .player__name {
@@ -14,6 +15,10 @@
     font-style: italic;
     color: #aaa;
     font-weight: 300;
+}
+
+.dim {
+    opacity: .3;
 }
 
 .player__actions {
